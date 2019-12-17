@@ -9,7 +9,7 @@ using namespace std;
 class BSTree
 {
     public:
-        BSTree();//
+        BSTree();
         void insert(const string &);//
         bool search(const string &) const;//
         string largest() const;//
@@ -19,7 +19,7 @@ class BSTree
         void preOrder() const;//
         void inOrder() const;//
         void postOrder() const;//
-        bool empty();//NR
+        bool empty();
 
     private:
         Node* root;

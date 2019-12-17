@@ -1,5 +1,5 @@
 #include <iostream>
-#include "BSTree.h"
+#include "../header/BSTree.h"
 
 using namespace std;
 
@@ -37,8 +37,8 @@ int menu() {
 int main( ) {
 
   BSTree tree;
-
-  int choice = menu();
+    cout << "hello" << endl;
+  int choice = 0; //menu();
 
   string entry;
 
@@ -79,7 +79,7 @@ int main( ) {
       cout << "Largest: " << tree.largest() << endl;
 
     } else if (choice == 7) {
-      cout << "Enter string: ";
+      cout << "Enter target string: ";
       getline(cin, entry);
       cout << endl;
       cout << "Height of subtree rooted at " << entry << ": "
